@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.florenciomath</groupId>
 	<artifactId>fundamentos-spring-boot</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>fundamentos-spring-boot</name>
 	<description>Rocketseat course of Spring Boot Fundamentals</description>
 	<url/>
