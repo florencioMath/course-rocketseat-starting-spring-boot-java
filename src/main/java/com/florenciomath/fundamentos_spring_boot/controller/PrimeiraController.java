@@ -23,4 +23,11 @@ public class PrimeiraController {
         return "As Query Params são: " + allParams;
     }
 
+    @PostMapping("/bodyParams")
+    public String bodyParams(@RequestBody Usuario usuario) {
+        return "Os Body Params são: " + "username: " +  usuario.username() + ", age: " + usuario.age();
+    }
+
+    record Usuario(String username, Integer age) {}
+
 }
