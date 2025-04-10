@@ -30,4 +30,14 @@ public class PrimeiraController {
 
     record Usuario(String username, Integer age) {}
 
+    @PostMapping("/headerParam")
+    public String headerParam(@RequestHeader("name") String name) {
+        return "O Header Param é: " + name;
+    }
+
+    @PostMapping("/headersParams")
+    public String headersParams(@RequestHeader Map<String, String> headers) {
+        return "Os Headers Params são: " + headers.entrySet();
+    }
+
 }
